@@ -71,7 +71,7 @@ usuarioSchema.methods.enviar_email_bienvenida = function(cb){
             from: 'sergiobollo@hotmail.com',
             to: email_destination,
             subject: 'Verificación de cuenta',
-            text: 'Hola,\n\n'+ 'Por favor, para verificar su cuenta haga click en este link: \n' + 'https://red-bicicletas-sergiobollo.herokuapp.com/' + '\/token/confirmation\/' + token.token
+            text: 'Hola,\n\n'+ 'Por favor, para verificar su cuenta haga click en este link: \n' + 'https://red-bicicletas-sergiobollo.herokuapp.com' + '\/token/confirmation\/' + token.token
         };
 
         mailer.sendMail(mailOptions, function(err, result) {
