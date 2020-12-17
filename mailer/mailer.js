@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer');
 const sgTransport = require('nodemailer-sendgrid-transport');
 
-
 let mailConfig;
 if (process.env.NODE_ENV === 'production'){
     const options = {
@@ -36,4 +35,3 @@ if (process.env.NODE_ENV === 'production'){
 }
 
 module.exports = nodemailer.createTransport(mailConfig);
-
