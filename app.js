@@ -60,6 +60,10 @@ app.use('/privacy_policy', function(req, res) {
   res.sendFile('public/privacy_policy.html');
 });
 
+app.use('/googlebc41197a7b93dec7', function(req, res) {
+  res.sendFile('public/googlebc41197a7b93dec7.html');
+});
+
 app.get('/login', function(req, res) {
   res.render('session/login');
 });
